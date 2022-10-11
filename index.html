@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="tes.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    
+    <title>Tugas coding pak redho </title>
+    <style>
+      body {
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(251,40,238,0.5649800573676693) 38%, rgba(0,212,255,1) 100%);
+      }
+      
+      .kartu {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 70px;
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.03);
+    transition: all .3s;
+           background-color: #591869;
+    border: solid 8px #ea92ff;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+      } 
+      .kartu:hover {
+        background-color: #1f8a45;
+        border: solid 8px #4fd47e;
+        border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+      }
+      .foto {
+            padding: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+      }
+      tbody {
+    font-size: 20px;
+    font-weight: 300;
+    color:white;
+}
+.biodata {
+    margin-top: 30px;
+}
+  body{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+        }
+        main{
+          margin: 5vh 15%;
+        }
+        h1{
+          font-size: 40px;
+          font-weight: 400;
+          text-align: center;
+        }
+        img{
+          width:50%;
+          height:auto;
+        }
+        p{
+          text-align: justify;
+          font-size: 18px;
+        }
+        label{
+            position: absolute;
+            width: 45px;
+            height: 22px;
+            right: 20px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+        label:before{
+            position: absolute;
+            content: '';
+            width:20px;
+            height: 20px;
+            left: 1px;
+            top: 1px;
+            border-radius: 50%;
+            background: #000;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        label.active:before{
+            left: 24px;
+            background: #fff;
+        }
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+        @media screen and (min-width:900px) {
+          .respon{
+            display: flex;
+          }
+          img{
+            height:50%;
+            width:auto;
+            padding-top: 3vh;
+            padding-right: 5%;
+          }
+          p{
+            max-width: 80%;
+            line-height: 30px;
+          }
+        }
+    </style>
+  </head>
+  <body>
+ 
+        <a href=" https://gf-elite.github.io"><h3 class="text-center text-success mt-3">melati</h3></a>
+        <!-- tag audio di sini gf Elite -->
+<div>
+	<audio id="audio">
+		<source src="media/bell.mp3" type="audio/mpeg">
+	</audio>
+
+	<button id="playPauseBTN" onclick="playPause()">Play ►</button>
+	 
+	 
+	<button onclick="stop()">Stop ▋</button>
+</div>
+
+
+
+<script src="js/custom.js"></script>
+<body>
+<header>
+    <label  id="dark-change"></label>
+  </header>
+  <main>
+      <h1>Biodata </h1>
+      <div class="respon">
+        <img src="/asifa.jpg" 
+        <p>mohon maaf jika jelek karena saya baru belajar html,js dan css</p>
+      </div>
+  </main>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+        
+        <!-- Isi Biodata Paling Keren di HTML disini -->
+<div id="loading">
+  
+</div>
+<div class="container">
+  <div class="card kartu">
+    <div class="row">
+      <div class="col-md-4">
+      <div class="foto">
+        <img src="foto/melati.jpg" class="img-thumbnail" alt="" width="150" height="auto">
+      </div>
+      </div>
+      <div class="col-md-8 kertas-biodata">
+        <div class="biodata">
+        <table width="100%" border="0">
+    <tbody><tr>
+        <td valign="top">
+        <table border="0" width="100%" style="padding-left: 2px; padding-right: 13px;">
+          <tbody>
+            <tr>
+              <td width="25%" valign="top" class="textt">Nama</td>
+                <td width="2%">:</td>
+                <td style="color: #e9a7f9; font-weight:bold">Melati Dwi Tata</td>
+            </tr>
+          <tr>
+              <td class="textt">Jenis Kelamin</td>
+                <td>:</td>
+ <td style="color: #e9a7f9; font-weight:bold">Perempuan</td>
+            </tr>
+          <tr>
+              <td class="textt">Tempat Lahir</td>
+                <td>:</td>
+ <td style="color: #e9a7f9; font-weight:bold"> sidodadi BT8 </td>
+            </tr>
+          <tr>
+              <td class="textt">Tanggal Lahir</td>
+                <td>:</td>
+                <td>13 05 2006</td>
+            </tr>
+<tr>
+              <td class="textt">hobi</td>
+                <td>:</td>
+                <td>  Liburan  </td>
+            </tr>
+          <tr>
+              <td class="textt">SMK</td>
+                <td>:</td>
+                <td>Awal karya pembangunan galang</td>
+            </tr>
+          <tr>
+              <td valign="top" class="textt">Jurusan</td>
+                <td valign="top">:</td>
+                <td>Rekeyasa Perangkat Lunak</td>
+            </tr>
+            <tr>
+              <td valign="top" class="textt">Blog</td>
+                <td valign="top">:</td>
+                <td> -- </td>
+            </tr>
+        </tbody></table>
+        </td>
+    </tr>
+    </tbody></table>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="mt-4 text-center text-white">
+      copyright 2022 ©  developed by GF Elite</footer>
+<div class="icons">
+<center>              <a href="#">
+
+                <i class="fab fa-twitter"></i>
+
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/GF-Elite">
+                <i class="fab fa-github"></i>
+              </a>
+          
+                <i class="fas fa-envelope"></i>
+              </a></center>
+              
+            
+ </div>
+   
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>"
+ 
